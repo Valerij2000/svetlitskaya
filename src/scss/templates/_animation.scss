@@ -1,0 +1,18 @@
+.animation__container {
+  @include adaptiveValue("padding-bottom", 60, 40);
+}
+
+.animation__title {
+  @include titleSkills;
+}
+
+.animation__description {
+  @include descriptionHead;
+  padding-left: rem(83);
+}
+
+@media (max-width:$mobile) {
+  .animation__description {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.card__img {
+  margin-bottom: rem(18);
+}
+
+.card__title {
+  font-family: 'VelaSans-Regular';
+  font-size: rem(22);
+  @include adaptiveValue("font-size", 22, 14);
+  @include adaptiveValue("line-height", 29, 16);
+  margin-bottom: rem(5);
+}
+
+.card__description {
+  font-family: 'VelaSans-Regular';
+  @include adaptiveValue("font-size", 22, 14);
+  @include adaptiveValue("line-height", 29, 16);
+  color: $color6C;
+}

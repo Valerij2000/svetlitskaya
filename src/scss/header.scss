@@ -1,0 +1,31 @@
+.header__container {
+  padding-top: rem(87);
+  padding-bottom: rem(75);
+  display: flex;
+  justify-content: center;
+  gap: rem(21);
+}
+
+.header__contact {
+  font-family: 'VelaSans-Regular';
+  font-size: rem(17);
+  line-height: math.div(26, 17);
+  color: $colorBF;
+}
+
+.header__social {
+  display: flex;
+  gap: rem(18);
+}
+
+.header__ico {
+  max-width: 28px;
+  max-height: 28px;
+}
+
+@media (max-width:$mobile) {
+  .header__container {
+    padding-top: rem(40);
+    padding-bottom: rem(70);
+  }
+}

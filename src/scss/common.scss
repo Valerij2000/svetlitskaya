@@ -1,0 +1,45 @@
+.page {
+  background-color: $colorfa;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.skills-list {
+  counter-reset: skill;
+}
+
+[class*="__counter"] {
+  &::before {
+    content: '0'counter(skill);
+    position: absolute;
+    left: 0;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $colorF2;
+    border-radius: 42px;
+    font-family: 'VelaSans-Regular';
+    font-size: rem(31);
+    line-height: math.div(68, 31);
+    letter-spacing: 0.02em;
+    color: $colorFF;
+    transform: rotate(20.86deg);
+    width: 49px;
+    height: 38px;
+  }
+
+  @media (max-width:$mobile) {
+    &::before {
+      top: -10px;
+      font-size: rem(22);
+      line-height: math.div(44, 22);
+      width: 32px;
+      height: 22px;
+    }
+  }
+}

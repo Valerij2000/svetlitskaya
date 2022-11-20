@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Personal Portfolio" })
+
+<body>
+  <div class="wrapper page">
+    @@include('html/_header.htm',{})
+    <main>
+      @@include('html/templates/_main.htm')
+      <ul class="skills-list">
+        <li>
+          @@include('html/templates/_skills.htm')
+        </li>
+        <li>
+          @@include('html/templates/_branding.htm')
+        </li>
+        <li>
+          @@include('html/templates/_illustration.htm')
+        </li>
+        <li>
+          @@include('html/templates/_animation.htm')
+        </li>
+        <li>
+          @@include('html/templates/_mail.htm')
+        </li>
+      </ul>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

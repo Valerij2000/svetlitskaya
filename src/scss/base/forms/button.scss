@@ -1,0 +1,33 @@
+.button {
+	display: inline-flex;
+	padding: 2px 8px;
+	background: $colorF2;
+	color: $whiteColor;
+	border-radius: 24px;
+}
+
+.button-contact {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px 40px;
+	border: 1px solid $mainColor;
+	border-radius: 34px;
+	font-family: 'VelaSans-Light';
+	font-size: rem(31);
+	line-height: math.div(36, 31);
+}
+
+.button-contact__star {
+	max-width: rem(33);
+	max-height: rem(33);
+}
+
+@media (max-width:$mobile) {
+	.button-contact {
+		padding: 5px 12px;
+		font-size: rem(22);
+		line-height: math.div(33, 22);
+	}
+}
