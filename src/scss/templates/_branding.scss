@@ -15,9 +15,7 @@
 }
 
 .branding__cards {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  @include adaptiveValue("gap", 24, 12);
+  @include gridLayout;
 }
 
 .branding__card:nth-child(1) {
@@ -58,12 +56,5 @@
 
   .branding__card:nth-child(4) {
     grid-column: 7 / 13;
-  }
-}
-
-@media (max-width: $mobileExtraSmall) {
-  .branding__cards {
-    display: flex;
-    flex-direction: column;
   }
 }

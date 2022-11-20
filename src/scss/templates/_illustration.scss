@@ -15,9 +15,7 @@
 }
 
 .illustration__cards {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  @include adaptiveValue("gap", 24, 12);
+  @include gridStatic;
 }
 
 .illustration__card:nth-child(1) {

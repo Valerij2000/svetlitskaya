@@ -1,0 +1,35 @@
+.game__container {
+  @include adaptiveValue("padding-bottom", 160, 60);
+}
+
+.game__head {
+  @include headTitle;
+}
+
+.game__title {
+  @include titleSkills;
+}
+
+.game__description {
+  @include descriptionHead;
+}
+
+.game__cards {
+  @include gridLayout;
+}
+
+.game__card:nth-child(1) {
+  grid-column: 1 / 8;
+}
+
+.game__card:nth-child(2) {
+  grid-column: 8 / 13;
+}
+
+.game__card:nth-child(3) {
+  grid-column: 1 / 6;
+}
+
+.game__card:nth-child(4) {
+  grid-column: 6 / 13;
+}

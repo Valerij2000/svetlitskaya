@@ -49,6 +49,23 @@
 	color: $color6C;
 }
 
+@mixin gridLayout {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	@include adaptiveValue("gap", 24, 12);
+
+	@media (max-width: $mobileExtraSmall) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@mixin gridStatic {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	@include adaptiveValue("gap", 24, 12);
+}
+
 //Percent
 @function percent($px, $from) {
 	$result: math.div($px, $from) * 100%;

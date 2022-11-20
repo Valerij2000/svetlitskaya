@@ -13,16 +13,6 @@
   color: $colorBF;
 }
 
-.header__social {
-  display: flex;
-  gap: rem(18);
-}
-
-.header__ico {
-  max-width: 28px;
-  max-height: 28px;
-}
-
 @media (max-width:$mobile) {
   .header__container {
     padding-top: rem(40);

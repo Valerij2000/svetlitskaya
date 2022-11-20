@@ -1,3 +1,24 @@
-//====================================================================================================
+.footer__container {
+  @include adaptiveValue("padding-top", 29, 15);
+  @include adaptiveValue("padding-bottom", 76, 30);
+}
 
-//====================================================================================================
+.footer__title {
+  @include adaptiveValue("font-size", 80, 40);
+  @include adaptiveValue("line-height", 101, 60);
+  text-transform: uppercase;
+  margin-bottom: rem(20);
+}
+
+.footer__ico {
+  max-width: rem(61);
+  max-height: rem(61);
+}
+
+
+@media (max-width:$mobile) {
+  .footer__ico {
+    max-width: rem(32);
+    max-height: rem(32);
+  }
+}

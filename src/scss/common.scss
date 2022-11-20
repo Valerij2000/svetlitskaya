@@ -12,6 +12,16 @@
   counter-reset: skill;
 }
 
+.social {
+  display: flex;
+  gap: rem(18);
+}
+
+.social__ico {
+  max-width: 28px;
+  max-height: 28px;
+}
+
 [class*="__counter"] {
   &::before {
     content: '0'counter(skill);

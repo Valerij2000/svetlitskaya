@@ -50,8 +50,8 @@
   align-items: center;
   padding: rem(2) rem(19);
   font-family: 'VelaSans-Regular';
-  font-size: rem(26);
-  line-height: math.div(29, 26);
+  font-size: rem(22);
+  line-height: math.div(27, 22);
   border: 2px solid $color6A;
   border-radius: rem(120);
 }
@@ -164,8 +164,8 @@
   }
 
   .skills__label {
-    font-size: rem(22);
-    line-height: math.div(27, 22);
+    font-size: rem(18);
+    line-height: math.div(22, 18);
   }
 
   .skills__label-button {
