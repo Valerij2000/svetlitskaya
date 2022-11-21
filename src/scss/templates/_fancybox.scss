@@ -1,0 +1,26 @@
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__container {
+  --fancybox-color: #999;
+  --fancybox-bg: #fff;
+
+  --carousel-button-svg-width: 32px;
+  --carousel-button-svg-height: 32px;
+
+  --carousel-button-svg-stroke-width: 1.2;
+  --carousel-button-svg-filter: none;
+}
+
+.fancybox__nav {
+  --carousel-button-svg-width: 36px;
+  --carousel-button-svg-height: 36px;
+
+  --carousel-button-svg-stroke-width: 1;
+}
+
+.has-image[data-image-fit="contain-w"] {
+  padding: 0;
+  overflow: hidden;
+}

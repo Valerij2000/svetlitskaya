@@ -116,6 +116,10 @@ body {
 @if ($responsiveType==1) {
 
 	// Отзывчивая
+	.fancybox__container {
+		min-width: 100%;
+	}
+
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
@@ -188,3 +192,4 @@ body {
 @import "templates/mail";
 @import "templates/game";
 @import "templates/rendering";
+@import "templates/fancybox";
