@@ -16,7 +16,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   // Disable touch guestures
   Carousel: {
     Panzoom: {
-      touch: false,
+      touch: true,
     },
   },
 
