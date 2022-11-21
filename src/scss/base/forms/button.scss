@@ -26,6 +26,26 @@
 	max-height: rem(33);
 }
 
+.button-play {
+	font-family: 'VelaSans-Regular';
+	font-size: rem(22);
+	background-image: linear-gradient(29, 22);
+	color: $color6A;
+
+	&::after {
+		content: url('@img/icons/arrow.svg');
+		position: relative;
+		left: 20px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		@include adaptiveValue("width", 48, 30);
+		@include adaptiveValue("height", 48, 30);
+		border-radius: 50%;
+		border: 1px solid $color6A;
+	}
+}
+
 @media (max-width:$mobile) {
 	.button-contact {
 		padding: 5px 12px;

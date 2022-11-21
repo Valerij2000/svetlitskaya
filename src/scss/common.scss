@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   background-color: $colorfa;
 }
@@ -20,6 +24,14 @@
 .social__ico {
   max-width: 28px;
   max-height: 28px;
+}
+
+.mt-20 {
+  margin-top: rem(20);
+
+  @media (max-width:$mobile) {
+    margin-top: rem(12);
+  }
 }
 
 [class*="__counter"] {
