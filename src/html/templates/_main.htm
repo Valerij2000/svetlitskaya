@@ -6,7 +6,13 @@
       <button class="main__button button">Graphic Designer</button>
     </div>
     <h1 class="main__title">PERSONAL <span class="main__title-slogan">Portfolio</span></h1>
-    <video class="main__gifs img" autoplay loop src="@img/main/hand.mp4"></video>
+    <video class="main__gifs img" autoplay loop muted playsinline defaultmuted preload="auto">
+      <source src="@img/main/hand.mp4" type="video/mp4">
+      <source src="@img/main/hand.ogv" type="video/ogv">
+      <source src="@img/main/hand.webm" type="video/webm">
+      <source src="@img/main/hand.h264" type="video/H.264">
+      Тег video не поддерживается вашим браузером.
+    </video>
     <a href="https://t.me/jlsvetl" target="_blank" class="main__button-contact button-contact">
       Contact me
       <svg class="button-contact__star">
