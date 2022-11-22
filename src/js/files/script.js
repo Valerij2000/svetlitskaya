@@ -2,3 +2,4 @@
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
 import { fancyboxConfig } from "./fancybox-config.js";
+import { aos } from "./aos.js";
