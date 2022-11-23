@@ -36,6 +36,7 @@
 
 .skills__content {
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: 25px;
 }
@@ -126,8 +127,8 @@
   align-items: center;
   padding: rem(2) rem(19);
   font-family: 'VelaSans-Regular';
-  font-size: rem(26);
-  line-height: math.div(29, 26);
+  font-size: rem(22);
+  line-height: math.div(29, 22);
   border-radius: rem(120);
 }
 
@@ -140,7 +141,16 @@
   color: $whiteColor;
 }
 
+.skills-position {
+  position: relative;
+  right: 9px;
+}
+
 @media (max-width:$lg) {
+  .skills-position {
+    position: static;
+  }
+
   .skills__col:nth-child(2) {
     align-items: flex-start;
   }
